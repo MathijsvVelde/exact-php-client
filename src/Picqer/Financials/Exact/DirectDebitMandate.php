@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class DirectDebitMandate
@@ -22,6 +20,7 @@ namespace Picqer\Financials\Exact;
  */
 class DirectDebitMandate extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -36,9 +35,10 @@ class DirectDebitMandate extends Model
         'PaymentType',
         'Reference',
         'SignatureDate',
-        'Type',
+        'Type'
     ];
 
     protected $url = 'cashflow/DirectDebitMandates';
+
 }
 

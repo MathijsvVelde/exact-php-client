@@ -1,7 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
-
+<?php namespace Picqer\Financials\Exact;
 /**
  * Class ReportingBalance
  *
@@ -27,8 +24,10 @@ namespace Picqer\Financials\Exact;
  * @property Int32 $Status Status: 20 = Open, 50 = Processed. To get 'after entry' results, both Open and Processed amounts have to be included. This is by default, so it requires no extra filtering.
  * @property Int32 $Type The type of the transactions in the grouping.
  */
+
 class ReportingBalance extends Model
 {
+
     use Query\Findable;
 
     protected $primaryKey = 'ID';
@@ -51,8 +50,9 @@ class ReportingBalance extends Model
         'ReportingPeriod',
         'ReportingYear',
         'Status',
-        'Type',
+        'Type'
     ];
+
 
     protected $url = 'financial/ReportingBalance';
 }

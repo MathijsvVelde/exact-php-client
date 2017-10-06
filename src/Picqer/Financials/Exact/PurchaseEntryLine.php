@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class PurchaseEntryLine
@@ -54,4 +52,5 @@ class PurchaseEntryLine extends Model
     ];
 
     protected $url = 'purchaseentry/PurchaseEntryLines';
+
 }

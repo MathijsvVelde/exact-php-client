@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Me
@@ -38,6 +36,7 @@ namespace Picqer\Financials\Exact;
  */
 class Me extends Model
 {
+
     /**
      * @var string Name of the primary key for this model
      */

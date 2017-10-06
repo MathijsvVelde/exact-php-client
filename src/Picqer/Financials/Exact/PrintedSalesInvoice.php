@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class PrintedSalesInvoice
@@ -65,4 +63,5 @@ class PrintedSalesInvoice extends Model
     }
 
     protected $url = 'salesinvoice/PrintedSalesInvoices';
+
 }

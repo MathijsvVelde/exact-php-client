@@ -55,6 +55,7 @@ namespace Picqer\Financials\Exact;
  */
 class CashEntryLine extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -102,8 +103,9 @@ class CashEntryLine extends Model
         'VATCode',
         'VATCodeDescription',
         'VATPercentage',
-        'VATType',
+        'VATType'
     ];
 
     protected $url = 'financialtransaction/CashEntryLine';
+
 }

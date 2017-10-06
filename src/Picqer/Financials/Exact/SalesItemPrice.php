@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class SalesItemPrice
@@ -31,9 +29,12 @@ namespace Picqer\Financials\Exact;
  * @property DateTime $StartDate Together with EndDate this determines whether the price is active
  * @property String $Unit The unit code of the price
  * @property String $UnitDescription Description of the price unit
+
+
  */
 class SalesItemPrice extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -64,4 +65,5 @@ class SalesItemPrice extends Model
     ];
 
     protected $url = 'logistics/SalesItemPrices';
+
 }

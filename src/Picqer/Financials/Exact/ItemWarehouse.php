@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class ItemWarehouse
@@ -41,6 +39,7 @@ namespace Picqer\Financials\Exact;
  */
 class ItemWarehouse extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 

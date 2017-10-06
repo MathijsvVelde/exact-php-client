@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class SalesEntryLine
@@ -47,6 +45,7 @@ namespace Picqer\Financials\Exact;
  */
 class SalesEntryLine extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -90,4 +89,5 @@ class SalesEntryLine extends Model
     ];
 
     protected $url = 'salesentry/SalesEntryLines';
+
 }

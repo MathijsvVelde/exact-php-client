@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class SubscriptionType
@@ -21,6 +19,7 @@ namespace Picqer\Financials\Exact;
  */
 class SubscriptionType extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -38,4 +37,5 @@ class SubscriptionType extends Model
     ];
 
     protected $url = 'subscription/SubscriptionTypes';
+
 }

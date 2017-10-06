@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Item
@@ -96,11 +94,12 @@ namespace Picqer\Financials\Exact;
  */
 class Item extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
     protected $fillable = [
-        'Barcode',
+	'Barcode',
         'ID',
         'Class_01',
         'Class_02',
@@ -185,8 +184,9 @@ class Item extends Model
         'StartDate',
         'Stock',
         'Unit',
-        'UnitDescription',
+        'UnitDescription'
     ];
 
     protected $url = 'logistics/Items';
+
 }

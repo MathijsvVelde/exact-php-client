@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Contact
@@ -75,6 +73,7 @@ namespace Picqer\Financials\Exact;
  */
 class Contact extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -142,7 +141,7 @@ class Contact extends Model
         'SocialSecurityNumber',
         'StartDate',
         'State',
-        'Title',
+        'Title'
     ];
 
     protected $url = 'crm/Contacts';

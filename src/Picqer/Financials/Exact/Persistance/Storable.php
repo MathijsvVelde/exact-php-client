@@ -1,39 +1,14 @@
 <?php namespace Picqer\Financials\Exact\Persistance;
 
-use Picqer\Financials\Exact\Connection;
+trait Storable {
 
-trait Storable
-{
-    /**
-     * @return boolean
-     */
-    abstract function exists();
-
-    /**
-     * @param array $attributes
-     */
-    abstract function fill($attributes);
-
-    /**
-     * @param int $options
-     * @param bool $withDeferred
-     * @return string
-     */
-    abstract function json($options = 0, $withDeferred = false);
-
-    /**
-     * @return Connection
-     */
-    abstract function connection();
-
-    /**
-     * @return $this
-     */
     public function save()
     {
-        if ($this->exists()) {
+        if ($this->exists())
+        {
             $this->fill($this->update());
-        } else {
+        } else
+        {
             $this->fill($this->insert());
         }
 
@@ -42,7 +17,7 @@ trait Storable
 
     public function insert()
     {
-        return $this->connection()->post($this->url, $this->json(0, true));
+        return $this->connection()->post($this->url, $this->json(0, TRUE));
     }
 
     public function update()

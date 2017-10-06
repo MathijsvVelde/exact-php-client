@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Address
@@ -64,6 +62,7 @@ namespace Picqer\Financials\Exact;
  */
 class Address extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -124,4 +123,5 @@ class Address extends Model
     ];
 
     protected $url = 'crm/Addresses';
+
 }

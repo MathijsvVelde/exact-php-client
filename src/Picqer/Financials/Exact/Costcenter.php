@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Costcenter
@@ -22,6 +20,7 @@ namespace Picqer\Financials\Exact;
  */
 class Costcenter extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -36,7 +35,7 @@ class Costcenter extends Model
         'Division',
         'Modified',
         'Modifier',
-        'ModifierFullName',
+        'ModifierFullName'
     ];
 
     protected $url = 'hrm/Costcenters';

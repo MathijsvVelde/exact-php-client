@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 use Exception;
 use GuzzleHttp\Client;
@@ -93,6 +91,7 @@ class Connection
      */
     protected $middleWares = [];
 
+
     /**
     * @var
     */
@@ -146,7 +145,7 @@ class Connection
     /**
      * @param string $method
      * @param $endpoint
-     * @param mixed $body
+     * @param null $body
      * @param array $params
      * @param array $headers
      * @return Request
@@ -200,8 +199,6 @@ class Connection
         } catch (Exception $e) {
             $this->parseExceptionForErrorMessages($e);
         }
-        
-        return null;
     }
 
     /**
@@ -222,8 +219,6 @@ class Connection
         } catch (Exception $e) {
             $this->parseExceptionForErrorMessages($e);
         }
-
-        return null;
     }
 
     /**
@@ -244,8 +239,6 @@ class Connection
         } catch (Exception $e) {
             $this->parseExceptionForErrorMessages($e);
         }
-
-        return null;
     }
 
     /**
@@ -265,8 +258,6 @@ class Connection
         } catch (Exception $e) {
             $this->parseExceptionForErrorMessages($e);
         }
-
-        return null;
     }
 
     /**
@@ -320,6 +311,7 @@ class Connection
     {
         $this->refreshToken = $refreshToken;
     }
+
 
     /**
      *
@@ -463,6 +455,7 @@ class Connection
         }
     }
 
+
     private function getDateTimeFromExpires($expires)
     {
         if (!is_numeric($expires)) {
@@ -541,6 +534,7 @@ class Connection
     public function setTokenUpdateCallback($callback) {
         $this->tokenUpdateCallback = $callback;
     }
+
 
     /**
      * Parse the reponse in the Exception to return the Exact error messages

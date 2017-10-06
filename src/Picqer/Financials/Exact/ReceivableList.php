@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class ReceivableList
@@ -27,6 +25,7 @@ namespace Picqer\Financials\Exact;
  */
 class ReceivableList extends Model
 {
+
     use Query\Findable;
 
     protected $primaryKey = 'HID';
@@ -47,8 +46,9 @@ class ReceivableList extends Model
 		'InvoiceNumber',
 		'JournalCode',
 		'JournalDescription',
-		'YourRef',
+		'YourRef'
     ];
 
     protected $url = 'read/financial/ReceivablesList';
+
 }

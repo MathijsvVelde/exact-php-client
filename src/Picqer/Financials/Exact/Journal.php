@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Journal
@@ -16,6 +14,7 @@ namespace Picqer\Financials\Exact;
  */
 class Journal extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -28,4 +27,5 @@ class Journal extends Model
     ];
 
     protected $url = 'financial/Journals';
+
 }

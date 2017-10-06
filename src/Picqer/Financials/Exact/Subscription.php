@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Subscription
@@ -53,6 +51,7 @@ namespace Picqer\Financials\Exact;
  */
 class Subscription extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
     

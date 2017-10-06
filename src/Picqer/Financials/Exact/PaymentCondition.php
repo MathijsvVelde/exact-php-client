@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class PaymentCondition
@@ -33,6 +31,7 @@ namespace Picqer\Financials\Exact;
  */
 class PaymentCondition extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -58,8 +57,9 @@ class PaymentCondition extends Model
         'PaymentEndOfMonths',
         'PaymentMethod',
         'Percentage',
-        'VATCalculation',
+        'VATCalculation'
     ];
 
     protected $url = 'cashflow/PaymentConditions';
+
 }

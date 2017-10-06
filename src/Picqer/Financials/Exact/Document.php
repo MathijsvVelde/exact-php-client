@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class Document
@@ -31,6 +29,7 @@ namespace Picqer\Financials\Exact;
  */
 class Document extends Model
 {
+
     use Query\Findable;
     use Persistance\Storable;
 
@@ -58,4 +57,5 @@ class Document extends Model
     ];
 
     protected $url = 'documents/Documents';
+
 }

@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class SalesOrder
@@ -74,7 +72,7 @@ class SalesOrder extends Model
 
     protected $primaryKey = 'OrderID';
 
-    protected $saleOrderLines = [];
+    protected $saleOrderLines = [ ];
 
     protected $fillable = [
         'OrderID',
@@ -142,10 +140,10 @@ class SalesOrder extends Model
      */
     public function addItem(array $array)
     {
-        if (! isset($this->attributes['SalesOrderLines']) || $this->attributes['SalesOrderLines'] == null) {
+        if (!isset($this->attributes['SalesOrderLines']) || $this->attributes['SalesOrderLines'] == null) {
             $this->attributes['SalesOrderLines'] = [];
         }
-        if (! isset($array['LineNumber'])) {
+        if (!isset($array['LineNumber'])) {
             $array['LineNumber'] = count($this->attributes['SalesOrderLines']) + 1;
         }
         $this->attributes['SalesOrderLines'][] = $array;

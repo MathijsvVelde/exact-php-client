@@ -1,5 +1,4 @@
 <?php
-
 namespace Picqer\Financials\Exact;
 
 /**
@@ -8,10 +7,10 @@ namespace Picqer\Financials\Exact;
  * @package Picqer\Financials\Exact
  * @see https://start.exactonline.nl/docs/HlpRestAPIResourcesDetails.aspx?name=ReadLogisticsStockPosition
  *
- * @property Double $InStock Number of items in stock
- * @property Guid $ItemId Primary key, Item
- * @property Double $PlanningIn Number of items that are planned to come in
- * @property Double $PlanningOut Number of items that are planned to go out
+ * @property $InStock
+ * @property $ItemId
+ * @property $PlanningIn
+ * @property $PlanningOut
  */
 class StockPosition extends Model
 {
@@ -22,12 +21,7 @@ class StockPosition extends Model
      *
      * @var string[]
      */
-    protected $fillable = [
-        'InStock',
-        'ItemId',
-        'PlanningIn',
-        'PlanningOut',
-    ];
+    protected $fillable = ['InStock', 'ItemId', 'PlanningIn', 'PlanningOut'];
 
     /**
      * The API request URL slug.

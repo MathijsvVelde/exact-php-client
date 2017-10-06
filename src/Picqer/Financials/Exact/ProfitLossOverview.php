@@ -1,6 +1,4 @@
-<?php
-
-namespace Picqer\Financials\Exact;
+<?php namespace Picqer\Financials\Exact;
 
 /**
  * Class ProfitLossOverview
@@ -26,31 +24,34 @@ namespace Picqer\Financials\Exact;
  * @property Double $RevenuePreviousYear Revenue in previous year
  * @property Double $RevenuePreviousYearPeriod Revenue in period of previous year
  */
+
 class ProfitLossOverview extends Model
 {
+
     use Query\Findable;
 
     protected $primaryKey = 'CurrentYear';
 
     protected $fillable = [
-        'CostsCurrentPeriod',
-        'CostsCurrentYear',
-        'CostsPreviousYear',
-        'CostsPreviousYearPeriod',
-        'CurrencyCode',
-        'CurrentYear',
-        'CurrentPeriod',
-        'PreviousYear',
-        'PreviousYearPeriod',
-        'ResultCurrentPeriod',
-        'ResultCurrentYear',
-        'ResultPreviousYear',
-        'ResultPreviousYearPeriod',
-        'RevenueCurrentPeriod',
-        'RevenueCurrentYear',
-        'RevenuePreviousYear',
-        'RevenuePreviousPeriod',
+		'CostsCurrentPeriod',
+		'CostsCurrentYear',
+		'CostsPreviousYear',
+		'CostsPreviousYearPeriod',
+		'CurrencyCode',
+		'CurrentYear',
+		'CurrentPeriod',
+		'PreviousYear',
+		'PreviousYearPeriod',
+		'ResultCurrentPeriod',
+		'ResultCurrentYear',
+		'ResultPreviousYear',
+		'ResultPreviousYearPeriod',
+		'RevenueCurrentPeriod',
+		'RevenueCurrentYear',
+		'RevenuePreviousYear',
+		'RevenuePreviousPeriod'
     ];
 
     protected $url = 'read/financial/ProfitLossOverview';
+
 }
