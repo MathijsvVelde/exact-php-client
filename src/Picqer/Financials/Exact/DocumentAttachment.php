@@ -22,7 +22,6 @@ class DocumentAttachment extends Model
         'Attachment',
         'Document',
         'FileName',
-        'FileSize',
         'Url'
     ];
 
