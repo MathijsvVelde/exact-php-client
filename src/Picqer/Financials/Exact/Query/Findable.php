@@ -9,7 +9,7 @@ trait Findable
      */
     abstract function connection();
 
-    abstract function isFillable($key);
+    abstract function isFillable();
 
     public function find($id)
     {
